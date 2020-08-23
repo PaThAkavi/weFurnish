@@ -1,0 +1,20 @@
+<%- include ('partials/header'); %>
+<link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
+</head>
+<body>
+<%- include ('partials/navbar'); %>
+
+<center>
+<div style="margin-top: 12%; margin-bottom: 15%;" id="formdiv">
+    <h1>LOGIN</h1>
+    <br>
+    <form action='/login' method='POST'>	
+        <table valign="left" border="0" cellspacing="4" cellpadding="4">
+            <tr><td><b>User Name</b></td><td><input type="text" name="username"></tr>
+            <tr><td><b>Password</b></td><td><input type="password" name="password"></tr>
+            <tr><td></td><td><input type="submit" class="btn btn-dark">&nbsp;&nbsp;&nbsp;<a class="btn btn-dark" href="signup">Sign up</a></tr>
+        </table>
+    </form>
+</div>
+</center>
+<%- include ('partials/footer'); %>

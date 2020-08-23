@@ -1,0 +1,22 @@
+<%- include('partials/header'); %>
+<link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
+</head>
+<body>
+<%- include ('partials/navbar'); %>
+<center>
+    <div style="margin-top: 12%; margin-bottom: 15%;" id="formdiv">
+        <h1>ADD FURNITURE</h1>
+        <br>
+        <div style="padding-left: 15%;">
+            <form action='/catalog' method='POST'>	
+                <table valign="left" border="0" cellspacing="4" cellpadding="4">
+                    <tr><td><b>Type</b></td><td><input type="text" name="name" required></tr>
+                    <tr><td><b>Price($)</b></td><td><input type="text" name="price" required></tr>
+                    <tr><td><b>Image(.jpg)</b></td><td><input type="file" name="image" required></tr>
+                    <tr><td></td><td><input type="submit" class="btn btn-dark"></tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</center>
+<%- include ('partials/footer'); %>

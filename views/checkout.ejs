@@ -1,0 +1,25 @@
+<%- include ('partials/header');%>
+
+<link rel="stylesheet" href="/stylesheets/checkout.css">
+</head>
+<body>
+    <%- include ('partials/navbar');%>
+    <center>
+    <div style="margin-top: 13%;" id="box">
+        <br>
+        <h2>Checkout</h2>
+            <form>
+            <table valign="left" border="0" cellspacing="4" cellpadding="4">
+                <tr><td><b>Name on card</b></td><td><input class="form-control" type="text" name="uname"></td></tr>
+                <tr><td><b>Credit/Debit card number</b></td><td><input class="form-control" type="password" name="pwd"></td></tr>
+                <tr><td><b>Exp month</b></td><td><input class="form-control" type="text" name="exp"></td></tr>
+                <tr><td><b>Exp year</b></td><td><input class="form-control" type="password" name="cvv"></td></tr>
+                <tr><td><b>CVV</b></td><td><input class="form-control" type="password" name="email"></tr>
+                <tr><td><br></td></tr>
+                <tr><td><a class="btn btn-dark" href="thankyou">Proceed</a></tr></td>
+            </table>
+            </form>
+            </div>
+        </div>
+    </center>
+<%- include ('partials/footer');%>

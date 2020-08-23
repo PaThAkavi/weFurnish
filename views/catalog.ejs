@@ -1,0 +1,29 @@
+<%- include ('partials/header'); %>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/catalog.css">
+</head>
+<body>
+<%- include ('partials/navbar'); %>
+<div class="container">
+    <h1 style=" margin-top: 30px;">Furnitures</h1>
+    <br>
+</div>
+
+<div class="container" id="container">
+    <% furnitures.forEach(function(furniture){ %>
+        <div class="gallery">
+            <a href="#"><img src= "<%= furniture.image %>"></a>
+            <div class="desc">
+                <%= furniture.name %> <a href="#" id="info" class="btn btn-dark">Details</a> <br>
+                $<%= furniture.price %>
+            </div>
+        </div>
+    <% }); %>
+</div>
+
+<div class="container">
+    <a class="btn btn-dark" href="summary" style="margin-top: 60px;">Proceed to Checkout</a>
+    <!-- <a class="btn btn-dark" href="/catalog/new" style="margin-top: 60px; float: right;">Add Furniture</a> -->
+</div>
+
+<%- include ('partials/footer'); %>

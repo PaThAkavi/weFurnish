@@ -1,0 +1,36 @@
+#container{
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffff;
+    overflow: auto;
+}
+
+.gallery{
+    margin: 5px;
+    border: 1px solid lightgray;
+    float: left;
+    width: 280px;
+    overflow: hidden;
+}
+
+.gallery img {
+    transition: transform .2s ease-in-out;
+}
+
+.gallery:hover img{
+    transform: scale(1.03);
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+.desc{
+    border-top: 1px solid lightgray;
+    padding: 15px;
+}
+
+#info {
+    float: right;
+}

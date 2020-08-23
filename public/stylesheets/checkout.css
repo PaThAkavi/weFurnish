@@ -1,0 +1,18 @@
+body{
+    background: url("../../images/cart.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+html{
+    height: 100%;
+}
+
+#box{
+    margin-left: 32%;
+    margin-right: 32%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.7);
+}

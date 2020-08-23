@@ -1,0 +1,26 @@
+<%- include ('partials/header'); %>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/signup.css">
+</head>
+<body>
+<%- include ('partials/navbar'); %>
+<center>
+<div style="margin-top: 10%; margin-bottom: 10%;" id="register">
+    <br>
+    <h1>REGISTER</h1>
+    <br>
+    <form action='/signup' method='POST'>
+        <table valign="left" border="0" cellspacing="4" cellpadding="4">
+            <tr><td><b>User Name</b></td><td><input type="text" name="username" ></td></tr>
+            <tr><td><b>Password</b></td><td><input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" ></td></tr>
+            <tr><td><b>Gender</b></td><td><input type="radio" name="gender" value="Male" > Male&emsp;<input type="radio" name="gender" value="Female"> Female</td></tr>
+            <tr><td><b>E-mail Id.</b></td><td><input type="email" name="email" ></tr>
+            <tr><td><b>Mobile No.</b></td><td><input type="tel" name="mobile" ></tr>
+            <tr><td></td><td><input type="submit" class="btn btn-dark">&nbsp;&nbsp;&nbsp;<a href="login" class="btn btn-dark">Signin</a></td></tr>
+        </table>
+    </form>
+    </div>
+    </div>
+</center>
+
+<%- include ('partials/footer'); %>

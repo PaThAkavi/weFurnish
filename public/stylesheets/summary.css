@@ -1,0 +1,22 @@
+#container{
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffff;
+    overflow: auto;
+}
+
+.gallery{
+    margin: 5px;
+    border: 1px solid black;
+    float: left;
+    width: 280px;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+.desc{
+    padding: 15px;
+}
